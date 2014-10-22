@@ -1,9 +1,10 @@
 {
-	"name": "myEmailTemplate",
-	"version": "0.0.1",
-	"author": "My Name",
-	"devDependencies": {
-		"grunt": "~0.4.5",
-		"grunt-connect": "^0.2.0"
-	}
+  "name": "myEmailTemplate",
+  "version": "0.0.1",
+  "author": "My Name",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-connect": "^0.2.0",
+    "grunt-inline-css": "~0.1.4"
+  }
 }
