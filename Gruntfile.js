@@ -6,10 +6,18 @@ module.exports = function(grunt) {
 			local: {
 				port: 3000,
 			}
-		}
+		},
+		inlinecss: {
+			files: {
+         			'email-to-send.html': 'index.html'
+         		}
+      		}
 	});
 
 	grunt.loadNpmTasks('grunt-connect');
-	grunt.registerTask('serve', 'connect:local')
+	grunt.loadNpmTasks('grunt-inline-css');
+
+	grunt.registerTask('serve', 'connect:local');
+	grunt.registerTask('convert', 'inlinecss');
 	grunt.registerTask('default', 'serve');
 };
