@@ -8,9 +8,12 @@ module.exports = function(grunt) {
 			}
 		},
 		inlinecss: {
-			files: {
-         			'email-to-send.html': 'index.html'
-         		}
+			main : {
+				options: {},
+				files: {
+         				'email-to-send.html': 'index.html'
+         			}
+			}
       		},
 		mailgun: {
 			mailer: {
